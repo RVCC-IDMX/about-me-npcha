@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@100;500&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="img/logo-favicon.png">
   </head>
   <body>
     <!-- The body tag is what is shown to a visitor. -->
@@ -20,14 +25,25 @@
       <!-- The header shows the logo and page title. -->
       <nav class="navbar">
         <div class="logo">
-          <img src="img/logo-96X96.svg" alt="A blue origami bird." />
+          <img src="img/logo-favicon.png" alt="A new logo." />
           <h1>Web Dev 1</h1>
         </div>
+        <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+        <label for="nav-checkbox" class="nav-icon">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+          </svg>
+        </label>
         <div class="navbar-links">
           <ul>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#lit">Blog</a></li>
+            <li><a href="#hero" class="active">Main</a></li>
+            <li><a href="#bio">About Me</a></li>
+            <li><a href="#gallery">My Artwork</a></li>
+            <li><a href="#lit">My Blog</a></li>
+            <li><a href="#video">My Video</a></li>
             <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
@@ -38,103 +54,173 @@
       <!-- The main contains important page content. -->
       <section id="hero">
         <img
-          src="/img/avataaars.png"
+          src="img/avatar.png"
           alt="An avatar that kinda look like me."
         />
 
         <div>
-          <p>Pipatporn Chaluthong</p>
-          <p>I'm from Thailand</p>
-          <p>Favorite Lyrics Line "Life's whatever you design"</p>
+          <p class="myName">Pipatporn Chaluthong</p>
+          <p class="quote">“Creativity is a collaboration with magic.” - Laura Jaworski</p>
         </div>
+
+
       </section>
 
       <section id="bio">
         <!-- Biographical Information -->
+        <h2>About Me</h2>
+        <div>
+          
+          <h3>Who Am I...</h3>
 
-        <h2>Biography:</h2>
-        
-        <p>I love...</p>
-        <ul>
-          <li>cat</li>
-          <li>anime</li>
-        </ul>
-      </section>
+          <p>My name is Pipatporn Chaluthong but go by Pipa or Nidnoi which is my nickname. I came from Thailand in 2014 when I was around 13 years old. I’m currently a student at RVCC and study Computer Programming. After graduating, my goal is to land a job, working in the industry, to support my family and myself. My long-term goal is to have a better life and make sure that my family lives comfortably in the future.</p>
 
-      <section id="hobbies">
-        <!--Hobbies Information-->
+          <h3>My Passion...</h3>
 
-        <h2>Hobbies:</h2>
+          <p>Besides my goals, I do have many passions or hobbies and one of them is art. I consider myself a free-time artist because I create art in my free time. Also, it helps me to express my feelings creatively and reduce my stress and anxiety at the time. Apart from that, I’m the type of person who gets bored easily, so I learn many art styles, tools, forms, and techniques so that I have many things to do. In the past many years, I have learned to use Photoshop and Procreate, how to make a watercolor painting with ink or marker, and how to use charcoal to draw, etc. 
+          </p>
 
-        <ul>
-          <li>cross-stitch</li>
-          <li>coloring</li>
-          <li>drawing</li>
-        </ul>
+          <h3>Fun Fact...</h3>
+          <p>I love cats and my dream is to open a cat sanctuary.
+          </p>
+
+        </div>
       </section>
 
       <section id="gallery">
 
-        <h2>Photo Gallery</h2>
+        <h2>My Artwork</h2>
 
-        <hr>
+        <div class="hover-effect">
+          <figure class="image">
+            <img src="img/tea-pot-house.png" alt="A tea pot house">
+          </figure>
+          <figcaption class="effect-text">Tea-Pot House </figcaption>
+        </div>
 
-        <figure>
-          <img src="img/cross-stitch-640w.jpg" alt="Flower cross-stitch">
-          <figcaption>Simple flower cross-stich pattern & thread</figcaption>
-        </figure>
+        <div class="hover-effect">
+          <figure class="image">
+            <img src="img/cute-landscape.png" alt="A cute and simple landscape">
+          </figure>
+          <figcaption class="effect-text-with-link"> Cute Landscape
+            <a href="#video" title="Video in the Video Section">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="link" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+              </svg>
+              
+            </a>
+          </figcaption> 
+        </div>
 
-        <hr>
+        <div class="hover-effect">
+          <figure class="image">
+            <img src="img/illustrator-mushroom-house.png" alt="A inllustrator mushroom house">
+          </figure>
+          <figcaption class="effect-text">Mushroom House</figcaption>
+        </div>
 
-        <figure>
-          <img src="img/adult-coloring-pages-640w.jpg" alt="adult coloring">
-          <figcaption>Adult coloring page & color pencils</figcaption>
-        </figure>
+        <div class="hover-effect">
+          <figure class="image">
+            <img src="img/lotus-low-poly.jpg" alt="A lotus tea pot house">
+          </figure>
+          <figcaption class="effect-text">Lotus Low-Poly</figcaption>
+        </div>
 
-        <hr>
+        <div class="hover-effect">
+          <figure class="image">
+            <img src="img/landscape-by-black-ink.JPG" alt="A landscape using black ink">
+          </figure>
+          <figcaption class="effect-text">Landscape Using Black Ink</figcaption>
+        </div>
 
-        <figure>
-          <img src="img/ipad-drawing-640w.jpg" alt="ipad drawing">
-          <figcaption>Simple flower drawing on the iPad</figcaption>
-        </figure>
+        <div class="hover-effect">
+          <figure class="image">
+            <img src="img/moon-galaxy.jpeg" alt="A moon galaxy with a girl and cat sitting inside">
+          </figure>
+          <figcaption class="effect-text">Moon Galaxy Using Marker</figcaption>
+        </div>
 
       </section>
 
       <article id="lit">
-        <h2>The Adventures of Sherlock Homes</h2>
+        <h2>Image Hover Effect</h2>
           <div>
-            <p>"Convinced that something was amiss with him, she rushed down the steps--for the house was none other than the opium den in which you found me to-night--and running through the front room she attempted to ascend the stairs which led to the first floor. At the foot of the stairs, however, she met this Lascar scoundrel of whom I have spoken, who thrust her back and, aided by a Dane, who acts as assistant there, pushed her out into the street. Filled with the most maddening doubts and fears, she rushed down the lane and, by rare good-fortune, met in Fresno Street a number of constables with an inspector, all on their way to their beat. The inspector and two men accompanied her back, and in spite of the continued resistance of the proprietor, they made their way to the room in which Mr. St. Clair had last been seen. There was no sign of him there. In fact, in the whole of that floor there was no one to be found save a crippled wretch of hideous aspect, who, it seems, made his home there. Both he and the Lascar stoutly swore that no one else had been in the front room during the afternoon. So determined was their denial that the inspector was staggered, and had almost come to believe that Mrs. St. Clair had been deluded when, with a cry, she sprang at a small deal box which lay upon the table and tore the lid from it. Out there fell a cascade of children's bricks. It was the toy which he had promised to bring home.</p>
+            <p>CSS (Cascading Style Sheets) is a powerful and essential language used to control the presentation and styling of web pages. It defines how elements such as text, images, buttons, and containers should appear on the screen. CSS not only allows designers to control the layout, font sizes, colors, and margins but also provides ways to add interactive effects like hover animations. One of the many hover effects that I will talk about is the image flip effect, which creates an engaging user interaction by flipping an image or an element when the user hovers over it with their mouse pointer. The flip effect gives the illusion of a 3D transformation, making the image or content rotate and reveal the back side, similar to flipping a physical card.
+            </p>
 
-            <p>"This discovery, and the evident confusion which the cripple showed, made the inspector realise that the matter was serious. The rooms were carefully examined, and results all pointed to an abominable crime. The front room was plainly furnished as a sitting-room and led into a small bedroom, which looked out upon the back of one of the wharves. Between the wharf and the bedroom window is a narrow strip, which is dry at low tide but is covered at high tide with at least four and a half feet of water. The bedroom window was a broad one and opened from below. On examination traces of blood were to be seen upon the windowsill, and several scattered drops were visible upon the wooden floor of the bedroom. Thrust away behind a curtain in the front room were all the clothes of Mr. Neville St. Clair, with the exception of his coat. His boots, his socks, his hat, and his watch--all were there. There were no signs of violence upon any of these garments, and there were no other traces of Mr. Neville St. Clair. Out of the window he must apparently have gone for no other exit could be discovered, and the ominous bloodstains upon the sill gave little promise that he could save himself by swimming, for the tide was at its very highest at the moment of the tragedy.</p>
+            <p>In this report, I will explain how I apply a hover effect using the flip effect on an image. The flip effect is a dramatic and visually appealing animation that rotates an element along the Y-axis, showing one side initially and revealing a second image or content when the user hovers over it. This effect creates a sense of depth, making it look like the element is being flipped in 3D space. The implementation involves using HTML and CSS, particularly using CSS properties like transform, perspective, transition, and backface-visibility.
+            </p>
 
-            <p>"And now as to the villains who seemed to be immediately implicated in the matter. The Lascar was known to be a man of the vilest antecedents, but as, by Mrs. St. Clair's story, he was known to have been at the foot of the stair within a very few seconds of her husband's appearance at the window, he could hardly have been more than an accessory to the crime. His defence was one of absolute ignorance, and he protested that he had no knowledge as to the doings of Hugh Boone, his lodger, and that he could not account in any way for the presence of the missing gentleman's clothes.</p>
+            <h4>On HTML,</h4>
 
-            <p>"So much for the Lascar manager. Now for the sinister cripple who lives upon the second floor of the opium den, and who was certainly the last human being whose eyes rested upon Neville St. Clair. His name is Hugh Boone, and his hideous face is one which is familiar to every man who goes much to the City. He is a professional beggar, though in order to avoid the police regulations he pretends to a small trade in wax vestas. Some little distance down Threadneedle Street, upon the left-hand side, there is, as you may have remarked, a small angle in the wall. Here it is that this creature takes his daily seat, cross-legged with his tiny stock of matches on his lap, and as he is a piteous spectacle a small rain of charity descends into the greasy leather cap which lies upon the pavement beside him. I have watched the fellow more than once before ever I thought of making his professional acquaintance, and I have been surprised at the harvest which he has reaped in a short time. His appearance, you see, is so remarkable that no one can pass him without observing him. A shock of orange hair, a pale face disfigured by a horrible scar, which, by its contraction, has turned up the outer edge of his upper lip, a bulldog chin, and a pair of very penetrating dark eyes, which present a singular contrast to the colour of his hair, all mark him out from amid the common crowd of mendicants and so, too, does his wit, for he is ever ready with a reply to any piece of chaff which may be thrown at him by the passers-by. This is the man whom we now learn to have been the lodger at the opium den, and to have been the last man to see the gentleman of whom we are in quest."</p>
+            <img src="img/html-hover-effect.png" alt="html example">
+
+            <p>
+            <br>I create a container for the flip effect: The container is given a class of flip-effect, and it will hold the entire flip animation. Then, I added a "flipper" element inside the container: This is the element that will perform the flipping animation when hovered. The flipper element wraps around the front and back sides of the image or content. Then, Inside the flipper, I create two sides: One side will be the "front," which is visible initially, and the other side will be the "back," which will become visible after the flip. Lastly, I add images to both the front and back sides: The front and back divs will each contain an image. These images will be shown when the respective side is facing the viewer.
+            </p>
+
+            <h4>Moving on to CSS,</h4>
+
+            <img src="img/css-flip-effect.png" alt="css example for flip-effect container">
+
+          <p>
+            <br>To begin, I style the flip-effect container with * (to all elements,) and inside that, I set padding to zero to very important.<br>
+              
+            <br>Then, I style the flip-effect container: I set the width and height of the   container to define the size of the image. The perspective property is a key for 3D effects. I set it to 1000px, which gives the illusion of depth when the element rotates. <br>
+          </p>
+
+            <img src="img/css-flipper.png" alt="css example for flipper element">
+              
+          <p>
+            <br>Third, I style the flipper element: I added a transition property to create a smooth animation. The transition duration is set to 0.7s, meaning the flip will take 0.7 seconds to complete. The transform-style property is set to preserve-3d to maintain the 3D effect while the element is rotating. I set the position to relative to ensure the "flipper" element is positioned correctly inside the container.<br>
+          </p>
+
+            <img src="img/css-hover-front-and-back.png" alt="css example for hover, back and front">
+
+          <p>
+            <br>Fourth, I create the flip effect on hover: I used the :hover pseudo-class to detect when the user hovers over the .flip-effect container. Inside that, I set the transform to be rotated the Y-axis by 180deg which creates the flip effect. <br>
+            
+            <br>Fifth, I style the front and back sides: I set both the front and back sides to be given a position: absolute so that they can be positioned on top of each other inside the "flipper." Then, I set the width and height to 100% to make both sides cover the entire container area. And, set the backface-visibility to hidden so, that the image will the back side of the image when it’s flipped away. <br>
+            
+            <br>Lastly, I style the back side of the flip which is similar to the third step. I set the back side to rotate the Y-axis by 180deg, so it is initially hidden behind the front side. When the flip effect is triggered, the back side becomes visible.
+          </p>
+            
+            
+            
+
+            <h5>Here is animation</h5>
           </div>
 
+          <div class="flip-effect">
+            <div class="flipper">
+                <div class="front"><img src="img/front-img.png" width="500px" alt="A front img"></div>
+                <div class="back"><img src="img/back-img.png" width="500px" alt="A back img"></div>
+            </div>
+        </div>
+
       </article>
+
+    
+
 
       <section id="video">
 
         <h2>A Short Video:</h2>
 
-        <figcaption>An Epic Music put together by Epic Music VN from various artists in a theme of Color The Sky.</figcaption>
-
         <div id="videoContainer">
 
           <iframe id="myVideo"
-          width="560" height="315" 
-          src="https://www.youtube.com/embed/fKCrenmyKE4?si=3GvhrYEAYDJIX5n9" title="YouTube video player" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen
-          >
-          </iframe>
+          width="560" height="315" src="https://www.youtube.com/embed/HGQzVrG2PGg?si=_HMWV00y9m9t3fKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
 
       </section>
 
+      <hr>
+
       <section id="contact">
+        
+      
 
         <h2>Contact Us:</h2>
 
@@ -167,7 +253,7 @@
               </select>
 
               <!-- Message -->
-              <label for="message">Message (optional)</label>
+              <label for="message">Message</label>
               <textarea id="message" name="message" rows="8"></textarea>
 
               <!-- Reply -->
@@ -201,6 +287,12 @@
     
     </main>
 
-    <footer>© 2024 - Pipatporn Chaluthong</footer>
+    <footer>© 2024 - Pipatporn Chaluthong
+        <a href="https://github.com/npcha">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </a>
+    </footer>
   </body>
 </html>

@@ -1,13 +1,13 @@
 body {
     font-family: Nunito;
-    background-color: #D3A1A1;
-    color: #363F41
+    background-color: #FEFAF8;
+    color: #402D21
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:"Poppins";
-    text-align: center;
+    font-family: Sansita;
+    text-align: left;
     font-size: 30px;
     margin-bottom: 0;
 }
@@ -15,117 +15,273 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     margin: .1em;
 }
-/*h1 {
-    font-size: 40px;
-}*/
+
 
 header {
     text-align: center;
 }
 
-#hero, footer {
-    color: #B7D6DC;
-    border: 2px solid #413232;
-    background-color: #A56C6C;
+/*Footer Section*/
+footer {
+    color: white;
+    font-size: 18px;
+    background-color: #1C2E4A;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    
+}
+
+.github {
+    height: 20px;
+    width: 20px;
 }
 
 /*Hero Section*/
+
+#hero {
+    justify-items: center;
+
+}
 
 #hero img {
     width: 300px;
 }
 
+#hero p {
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.myName {
+    font-weight: 650;
+    
+}
+
+.quote {
+    font-weight: 400;
+}
+
 /*Bio Section*/
 
 #bio {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: 2px solid #1C2E4A;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-/*Hobbies Section*/
+#bio h2 {
+    font-family: Fredericka the Great;
+    color: #402D21;
+    margin-top: .5rem;
+    margin-left: 1rem;
 
-#hobbies {
-    color: #413232;
-    text-shadow: 2px 2px 2px #A56C6C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+#bio h3 {
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-size: 25px;
+
+}
+
+#bio div {
+    margin: 2rem;
+    margin-top: 1rem;
+}
+
+#bio div p {
+    padding: 0;
+    margin-top: 0;
+    clear: both;
 }
 
 /*Gallery Section*/
 
 #gallery {
-    border: 2px solid #363F41;
+    
     margin-bottom: 2rem;
 }
 
 #gallery img {
-    max-width: 100%;
-    /*align-items: center;*/
+    width: 100%;
+    justify-content: center;
+
+    
 }
 
 #gallery figure {
-    color: black;
-    border: 2px solid #363F41;
-    background-color: #A56C6C;
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+}
+
+figure img {
+    height: 100%;
+}
+
+#gallery h2 {
+    font-family: Fredericka the Great;
+    text-align: left;
+    margin-bottom: 2rem;
+    
 
 }
 
 #gallery hr {
-    border: none;
-    border-top: 2px solid #363F41;
+    display: none;
 }
 
-/*Article Section*/
+.hover-effect {
+    position: relative;
+    /* width: 300px;
+    height: 300px; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.effect-text {
+    font-size: 35px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: bottom 0.3s ease;
+    text-align: center;
+}
+
+.effect-text-with-link {
+    font-size: 35px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: bottom 0.3s ease;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.link {
+    fill: white;
+    padding-bottom: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+.hover-effect:hover .effect-text  {
+    bottom: 0;
+}
+
+.hover-effect:hover .effect-text-with-link {
+    bottom: 0;
+}
+
+
+/*Article/Blog Section*/
+
 #lit {
-    border: 2px solid #363F41;
+    border: 2px solid #1C2E4A;
     margin-bottom: 2rem;
+}
+
+#lit h2 {
+    font-family: Fredericka the Great;
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 #lit div {
     padding: 2rem;
     max-width: 40rem;
     margin: auto;
+    padding-top: 0;
+    
 }
 
 #lit div p {
     padding: 0;
     margin-top: 0;
     clear: both;
+    
+
 }
 
-#lit div p:first-child::first-letter {
-    color: #363F41;
-    background-image: radial-gradient(white, #D3A1A1);
-    float: left;
-    font-size: 2em;
-    padding: 1rem;
-    margin-right: 1rem;
-    border: 2px solid #413232;
-    box-shadow: 3px 3px 3px #A56C6C;
-    text-shadow: 2px 2px 2px #B7D6DC;
+#lit h4, h5 {
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
+
+#lit img {
+    max-width: 100%;
+}
+
+/*Flip Effect Animation*/
+.flip-effect * {
+    padding:0px !important;
+}
+
+.flip-effect {
+    width: 500px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.flipper {
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-effect:hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
 
 /*Video Section*/
-
 #video {
-    color: #413232;
-    text-shadow: 2px 2px 2px #A56C6C;
-    width: 600px;
+    width: 800px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 }
 
+#video h2 {
+    font-family: Fredericka the Great;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 #videoContainer {
-    border: 3px solid #413232;
-    box-shadow: 6px 6px 5px #A56C6C;
+
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -142,17 +298,14 @@ header {
     bottom: 0;
     width: 100%;
     height: 100%;
+    
 }
 
-#video figcaption {
-    text-shadow: none;
-    text-align: center;
-    font-size: 13.5px;
-    color: black;
 
-}
 
 /*Contact Form*/
+
+
 #formElements {
     display: grid;
     row-gap: 0.5em;
@@ -164,19 +317,25 @@ header {
     margin: 2rem auto;
 }
 
+#contact h2 {
+    color: #1C2E4A;
+    text-align: center;
+
+}
+
 fieldset {
-    border: 2px solid #363F41;
+    border: 2px solid #1C2E4A;
     margin-top: 1em;
     margin-bottom: 1em;
-    box-shadow: 2px 2px 2px #4a5254;
+    box-shadow: 2px 2px 2px #1C2E4A;
 }
 
 legend {
-    border: 1px solid #363F41;
-    background-color: #363F41;
-    color: white;
+    border: 1px solid #1C2E4A;
+    background-color: #CED9E5;
+    color: #1C2E4A;
     padding: .5em;
-    box-shadow: 3px 3px #4a5254;
+    box-shadow: 3px 3px #1C2E4A;
 }
 
 #contact input, #contact textarea, #contact select, #contact button {
@@ -194,7 +353,7 @@ legend {
 }
 
 #contact button {
-    background-color: #363F41;
+    background-color: #1C2E4A;
     color: white;
     border: 2px solid black;
     max-width: 400px;
@@ -203,62 +362,46 @@ legend {
 }
 
 #contact button:hover {
-    background-color: #A56C6C;
+    background-color: black;
 }
 
 
 
-/*Small Screen Size*/
+/*Large Screen Size*/
 
 @media screen and (min-width: 60em){
-    figure {
+    #gallery {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        /*align-items: center;*/
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        
     }
 
-    figcaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        font-size: 25px;
-        margin-left: 1rem;
-    }
+    
+    
 
     figure img {
+        
         width: 100%;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
     }
 
     #lit div {
         max-width: 100%;
-        columns: 40rem;
-    } 
-
-    /*Large Screen Size*/
-
-    @media screen and (min-width: 100em) {
-        #gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        hr {
-            display: none;
-        }
-
-        #gallery h2 {
-            grid-column: 1/-1;
-        }
-
-        figure {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        figure img {
-            flex-grow: 2;
-        }
-
+        /* columns: 40rem; */
     }
+
+    
+}
+
+/*Small Screen Size*/
+@media screen and (min-width: 100em) {
+
+    
+
+    
+
 }
